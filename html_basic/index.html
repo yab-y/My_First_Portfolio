@@ -1,24 +1,60 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8">
-    <title>My First HTML Page</title>
-  </head>
-  <body>
-    <h1>Hello, world!</h1>
-    <p>This is my first valid HTML page.</p>
-    <h1>Welcome to My Portfolio</h1>
+<head>
+  <meta charset="UTF-8" />
+  <title>Home - My First Portfolio</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+    }
+    header ul {
+      list-style: none;
+      padding: 0;
+      display: flex;
+      gap: 20px;
+    }
+    header ul li a {
+      text-decoration: none;
+      color: #0366d6;
+    }
+    header ul li a:hover {
+      text-decoration: underline;
+    }
+    footer p {
+      font-size: 0.9em;
+      color: #555;
+    }
+  </style>
+</head>
+<body>
 
-  <h2>About Me</h2>
-  <p>Hello! My name is Yeabsira, and this is my portfolio website.</p>
-  <p>I am passionate about graphic design and web development.</p>
+  <header>
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="tweets.html">Tweets</a></li>
+    </ul>
+  </header>
 
-  <h3>My Skills</h3>
-  <p>I specialize in branding, illustration, and front-end development.</p>
-  <p>I'm currently learning more about HTML, CSS, and JavaScript to enhance my skills.</p>
+  <main>
+    <article>
+      <h1>Welcome to My First Portfolio</h1>
+      <h2>Learning HTML</h2>
+      <h3>Project Progress</h3>
+      <p>This is my very first webpage built using only HTML, CSS, and JavaScript.</p>
+      <p>I'm learning about tags, attributes, and webpage structure.</p>
+      <p>Next, I plan to improve with CSS and JavaScript.</p>
+      <p>Check out my tweets page by clicking the link below!</p>
+      <p><a href="tweets.html">Go to Tweets</a></p>
+    </article>
+    <aside>
+      <p>placeholder to add comment thread later</p>
+    </aside>
+  </main>
 
-  <a href="https://alxafrica.com" target="_blank" rel="noopener noreferrer">
-    <img src="https://i.ibb.co/gTDZZT8/ALX-Logo-07.png" alt="ALX Logo" width="200" />
-  </a>
-  </body>
+  <footer>
+    <p>Made by Yeabsira Wondwossen - <a href="https://github.com/yab-y" target="_blank">here</a>.</p>
+  </footer>
+
+</body>
 </html>
+

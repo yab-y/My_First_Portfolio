@@ -1,63 +1,87 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
+  <meta charset="UTF-8" />
   <title>My Tweets</title>
   <style>
     body {
       font-family: Arial, sans-serif;
-      margin: 30px;
     }
-
-    .fake-tweet {
+    header ul {
+      list-style: none;
+      padding: 0;
+      display: flex;
+      gap: 20px;
+    }
+    header ul li a {
+      text-decoration: none;
+      color: #0366d6;
+    }
+    header ul li a:hover {
+      text-decoration: underline;
+    }
+    .tweet {
       border: 1px solid #ccc;
       border-radius: 10px;
-      padding: 16px;
+      padding: 15px;
       max-width: 500px;
       background-color: #f5f8fa;
+      margin-bottom: 20px;
     }
-
     .tweet-header {
       font-weight: bold;
-      margin-bottom: 8px;
     }
-
     .tweet-username {
       color: #555;
       font-size: 0.9em;
     }
-
     .tweet-text {
-      font-size: 1em;
-      line-height: 1.5;
+      margin-top: 10px;
       margin-bottom: 10px;
+      line-height: 1.5;
     }
-
     .tweet-link {
       color: #1da1f2;
-      text-decoration: none;
       font-size: 0.9em;
+      text-decoration: none;
     }
-
-    a {
-      display: inline-block;
-      margin-top: 20px;
+    footer p {
+      font-size: 0.9em;
+      color: #555;
     }
   </style>
 </head>
 <body>
 
-  <h1>My Tweet</h1>
+  <header>
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="tweets.html">Tweets</a></li>
+    </ul>
+  </header>
 
-  <div class="fake-tweet">
-    <div class="tweet-header">Yeabsira Wondwossen <span class="tweet-username">@yab_y_dev · Jun 17, 2025</span></div>
-    <div class="tweet-text">
-      Just finished building my first HTML page without any frameworks — so proud of myself! 💻✨ Thanks @alxafrica!
-    </div>
-    <a class="tweet-link" href="https://twitter.com/yab_y_dev/status/1790332935221235673">View on Twitter</a>
-  </div>
+  <main>
+    <article>
+      <h1>My Tweet</h1>
+      <div class="tweet">
+        <div class="tweet-header">
+          Yeabsira Wondwossen <span class="tweet-username">@yab_y_dev · Jun 17, 2025</span>
+        </div>
+        <div class="tweet-text">
+          Just finished building my first HTML page without any frameworks — proud of my progress! 💻✨
+        </div>
+        <a class="tweet-link" href="https://twitter.com/yab_y_dev/status/1790332935221235673" target="_blank" rel="noopener noreferrer">View on Twitter</a>
+      </div>
+      <p><a href="index.html">← Back to homepage</a></p>
+    </article>
+    <aside>
+      <p>placeholder to add comment thread later</p>
+    </aside>
+  </main>
 
-  <a href="index.html">← Back to Homepage</a>
+  <footer>
+    <p>Made by Yeabsira Wondwossen - <a href="https://github.com/yab-y" target="_blank" rel="noopener noreferrer">here</a>.</p>
+  </footer>
 
 </body>
 </html>
